@@ -1,0 +1,19 @@
+.box img{
+	width:200px;
+	height:200px;
+	clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+	border:10px solid #97110F;
+	
+	animation-name:rhombus;
+	animation-duration:4s;
+	animation-iteration-count:infinite;
+	animation-timing-function:linear;
+}
+@keyframes rhombus{
+	0%{
+		transform:rotate(0deg);
+	}
+	100%{
+		transform:rotate(360deg);
+	}
+}
